@@ -8,6 +8,7 @@ information about the company and also allow the on-line ordering of food.
 
 As a front end developer you've been tasked with developing the client side functionality for this project.
 
+~~~
 CHANGELOG
 14/02/16 21:00 Wireframe Plans added
   + index wireframe plan
@@ -25,3 +26,5 @@ CHANGELOG
   + Footer on Index
   + Various Styles on existing elements within styles for index
   + Clock functionality within the header in time() function within scripts
+
+~~~
