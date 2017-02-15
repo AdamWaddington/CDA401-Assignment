@@ -1,5 +1,5 @@
 function time() {
-	var today = new Date()
+	var today = new Date();	
 	
 	var curr_hour = today.getHours();
 	var curr_minute = today.getMinutes();
@@ -15,11 +15,19 @@ function time() {
 	curr_hour12 = curr_hour12 ? curr_hour12 : 12; //0 not 12
 	
 	var curr_time12 = curr_hour12 + ":" + curr_minute + " " + ampm; //outputs 12 hour time
-	var curr_time = curr_hour + ":" + curr_minute + ":" + curr_second + " " + ampm; //outputs 24 hour time
+	var curr_time = curr_hour + ":" + curr_minute + ":" + curr_second + " " + ampm; //outputs 24 hour time (Not in use presently)
 	
-	//console.log(curr_time); //logs each second to console
+	//console.log(curr_time); //logs each second to console - debugging tool
 	
 	document.getElementById("timeoutput").innerHTML = curr_time12;
 	
-	setInterval(time, 500);
+}
+
+function date() {
+	var date = new Date();
+	var curr_date = date.toDateString();
+	
+	document.getElementById("dateoutput").innerHTML = curr_date;
+	
+	setInterval(time, 60000);
 }
