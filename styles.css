@@ -1,19 +1,21 @@
 body {
   font-family: arial, helvetica, sans-serif; 
-  height: 3000px;
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: transparent;
     float: left;
 	margin-top: -10px;
 	margin-left: -10px;
 	position: fixed;
 	top: 0;
 	width: 100%;
+	clear: both;
+	height: 285px;
 }
 
 nav {
+	float: left;
 	list-style-type: none;
 	margin-left: 50px;
 	margin-right: 0px;
@@ -21,6 +23,7 @@ nav {
 	position: fixed;
 	top: 100px;
 	width: 95%;
+	clear: both;
 }
 
 .nav {
@@ -45,11 +48,41 @@ nav li a {
 }
 
 nav li a:hover {
-	background-color: #CF1717;
+	background-color: #918EF4;
 }
 
 .active {
-	background-color: #CF1717;
+	background-color: #918EF4;
 }
-	
+
+aside.specialoffers {
+	margin-top: 285px;
+	float: left;
+	width: 15%;
+	min-width: 283px;
+	height: 800px;
+	background-color: #98B9F2;
+	color: #98B9F2;
+	margin-left: 50px;
+	border-radius: 8px;
+	margin-bottom: 25px;
+}
+
+footer, footer.p.timeoutput {
+	color: #98B9F2;
+	text-align: center;
+	border-style: groove;
+	border-top: thick double #918EF4;
+	background-color: #141B41;
+    float: left;
+	width: 110%;
+	margin-left: -20px;
+	margin-right: -10px;
+	margin-bottom: -10px;
+	clear: both;
+	height: 100px;
+}
+
+
+
 	
