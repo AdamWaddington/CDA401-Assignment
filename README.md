@@ -19,12 +19,17 @@ CHANGELOG
   + Header
   + Nav Bar
   + Locked Header & Nav Bar
-  + Colour Scheme SetUp
+  + Colour Scheme SetUp in styles
   
 15/02/16 22:30 Index.html, styles.css updated & scripts.js added
   + Placeholder for Side Menu (Left on Index)
   + Footer on Index
-  + Various Styles on existing elements within styles for index
-  + Clock functionality within the header in time() function within scripts
+  + Various Styles on existing elements within styles
+  + Clock functionality within the footer of time() function within scripts
+  
+15/02/16 23:00 Index.html, styles.css & scripts.js updated
+  + Date functionality within the footer of date() function within scripts
+  + Small changes to style of footer
+  [Completed up to 2.1.1]
 
 ~~~
