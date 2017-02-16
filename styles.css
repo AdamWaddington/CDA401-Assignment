@@ -83,15 +83,24 @@ hr {
 figure.centralimage {
 	margin-top: 285px;
 	float: left;
-	max-width: 30%;
 	background-color: transparent;
 	margin-left: 0px;
+	width: 1000px;
+	height: 300px;
 }
 
-img.mainimage {
-	width: 500px;
+img.mainslide {
+	width: 1000px;
 	height: 300px;
 	border-radius: 15px;
+	display:none;
+}
+
+button {
+	height: 13px;
+	width: 13px;
+	padding: 0px;
+	cursor: pointer;
 }
 
 footer, footer.p.timeoutput {
