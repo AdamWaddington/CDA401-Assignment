@@ -44,5 +44,6 @@ CHANGELOG
   - Placeholder removed 
   + Carosel Extended in pixel length
   + Amended header to show branding
+  [Completed 2.1.3] - [2.1.2 Outstanding]
 
 ~~~
