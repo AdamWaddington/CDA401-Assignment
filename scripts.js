@@ -25,7 +25,7 @@ function time() {
 
 function date() {
 	var date = new Date();
-	var curr_date = date.toDateString();
+	var curr_date = date.toDateString(); //converts to a readable format
 	
 	document.getElementById("dateoutput").innerHTML = curr_date;
 	
