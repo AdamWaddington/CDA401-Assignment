@@ -45,5 +45,10 @@ CHANGELOG
   + Carosel Extended in pixel length
   + Amended header to show branding
   [Completed 2.1.3] - [2.1.2 Outstanding]
+  
+16/02/17 04:00 Index.html, styles.css & scripts.js updated
+  + Placeholders added for two columns of text within index
+  + Adjusted Floats, Margins & Padding on various elements to display correctly
+  + Right float placeholder
 
 ~~~
