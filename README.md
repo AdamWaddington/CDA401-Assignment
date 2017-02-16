@@ -10,26 +10,33 @@ As a front end developer you've been tasked with developing the client side func
 
 ~~~
 CHANGELOG
-14/02/16 21:00 Wireframe Plans added
+14/02/17 21:00 Wireframe Plans added
   + index wireframe plan
   + contact wireframe plan
   + order wireframe plan
 
-15/02/16 17:00 Index.html & styles.css added
+15/02/17 17:00 Index.html & styles.css added
   + Header
   + Nav Bar
   + Locked Header & Nav Bar
   + Colour Scheme SetUp in styles
   
-15/02/16 22:30 Index.html, styles.css updated & scripts.js added
+15/02/17 22:30 Index.html, styles.css updated & scripts.js added
   + Placeholder for Side Menu (Left on Index)
   + Footer on Index
   + Various Styles on existing elements within styles
   + Clock functionality within the footer of time() function within scripts
   
-15/02/16 23:00 Index.html, styles.css & scripts.js updated
+15/02/17 23:00 Index.html, styles.css & scripts.js updated
   + Date functionality within the footer of date() function within scripts
   + Small changes to style of footer
   [Completed up to 2.1.1]
+  
+16/02/17 00:30 Index.html, styles.css & scripts.js updated
+  + Various Styles on existing elements within styles
+  + Added Text & Styling on 'Special Offers' Element
+  + Added new figure element and added placerholder image
+  + Set element max height and width
+  + Adjusted Margins on various elements to float correctly
 
 ~~~
