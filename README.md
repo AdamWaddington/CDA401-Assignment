@@ -50,5 +50,10 @@ CHANGELOG
   + Placeholders added for two columns of text within index
   + Adjusted Floats, Margins & Padding on various elements to display correctly
   + Right float placeholder
+  
+16/02/17 22:00 Index.html, styles.css & scripts.js updated
+  - Removed Special offers element
+  + Added side banner element
+  + Added JS Rollover feature (2 Images linked to order page)
 
 ~~~
