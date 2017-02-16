@@ -55,5 +55,6 @@ CHANGELOG
   - Removed Special offers element
   + Added side banner element
   + Added JS Rollover feature (2 Images linked to order page)
+  [Completed 2.1.2] - [Completed up to 2.2]
 
 ~~~
