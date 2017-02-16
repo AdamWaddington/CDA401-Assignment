@@ -36,15 +36,16 @@ var slideIndex = 0; //inits current image to first image
 
 function carousel() {
 		
-    var i; //counter 
-    var x = document.getElementsByClassName("mainslide");
-    for (i = 0; i < x.length; i++) { //if slide number is lower than the number of images it is set to the number of images
-      x[i].style.display = "none"; 
-    }
+    var counter;
+    var imageno = document.getElementsByClassName("mainslide");
+    for (counter = 0; counter < imageno.length; counter++) 
+		{ 
+		imageno[counter].style.display = "none"; //if slide number is lower than the number of images it is set to the number of images
+		}
     slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} //if slide number exceeds the number of images index is set back to 1
-    x[slideIndex-1].style.display = "block"; //displayers the current image
-    setTimeout(carousel, 5000); // Change image every 2 seconds
+    if (slideIndex > imageno.length) {slideIndex = 1} //if slide number exceeds the number of images index is set back to 1
+    imageno[slideIndex-1].style.display = "block"; //displayers the current image
+    setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
 /*

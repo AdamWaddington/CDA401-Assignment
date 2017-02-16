@@ -1,5 +1,7 @@
 body {
   font-family: century gothic; 
+  max-width: 1900px;
+  overflow-x: hidden;
 }
 
 header {
@@ -10,6 +12,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	max-width: 1900px;
 	clear: both;
 	height: 285px;
 }
@@ -19,10 +22,11 @@ nav {
 	list-style-type: none;
 	margin-left: 50px;
 	margin-right: 0px;
-	overflow: hidden;
+	overflow-x: hidden;
 	position: fixed;
 	top: 100px;
 	width: 95%;
+	max-width: 1900px;
 	clear: both;
 }
 
@@ -85,22 +89,53 @@ figure.centralimage {
 	float: left;
 	background-color: transparent;
 	margin-left: 0px;
-	width: 1000px;
-	height: 300px;
+	margin-right: 25px;
+	margin-bottom: 25px;
 }
 
 img.mainslide {
 	width: 1000px;
 	height: 300px;
 	border-radius: 15px;
-	display:none;
 }
 
-button {
-	height: 13px;
-	width: 13px;
-	padding: 0px;
-	cursor: pointer;
+section.placeholder {
+	margin-top: 285px;
+	width: 450px;
+	height: 300px;
+	background-color: #000000;
+	float: right;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	
+}
+
+section.lefttext {
+	float: left;
+	width: 475px;
+	background-color: transparent;
+	margin-left: 0px;
+	margin-right: 50px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+section.righttext {
+	float: left;
+	width: 475px;
+	background-color: transparent;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: justify;
 }
 
 footer, footer.p.timeoutput {
