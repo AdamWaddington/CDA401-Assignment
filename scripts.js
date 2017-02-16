@@ -38,13 +38,13 @@ function carousel() {
 		
     var counter;
     var imageno = document.getElementsByClassName("mainslide");
-    for (counter = 0; counter < imageno.length; counter++) 
+    for (counter = 0; counter < imageno.length; counter++) //loops until all other images are setup correctly to not display
 		{ 
-		imageno[counter].style.display = "none"; //if slide number is lower than the number of images it is set to the number of images
+		imageno[counter].style.display = "none"; //sets the other images not being presently displayed to 'none' as to hide them
 		}
     slideIndex++;
     if (slideIndex > imageno.length) {slideIndex = 1} //if slide number exceeds the number of images index is set back to 1
-    imageno[slideIndex-1].style.display = "block"; //displayers the current image
+    imageno[slideIndex-1].style.display = "block"; //displays the current image - only one image should display as block at once
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
@@ -53,4 +53,13 @@ function carousel() {
   slideIndex = n;
 }
 */
+
+function rollover(sidebanner) {
+	sidebanner.src = "media/pizzaboardbanner2.jpg";
+}
+
+function rolloff(sidebanner) {
+	sidebanner.src = "media/pizzaboardbanner1.jpg";
+}
+	
 
