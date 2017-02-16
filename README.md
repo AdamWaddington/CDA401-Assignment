@@ -38,5 +38,11 @@ CHANGELOG
   + Added new figure element and added placerholder image
   + Set element max height and width
   + Adjusted Margins on various elements to float correctly
+  
+16/02/17 03:00 Index.html, styles.css & scripts.js updated
+  + Carousel added in place of figure element with placeholder image
+  - Placeholder removed 
+  + Carosel Extended in pixel length
+  + Amended header to show branding
 
 ~~~
