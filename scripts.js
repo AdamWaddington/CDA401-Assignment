@@ -58,7 +58,7 @@ function rollover(sidebanner) {
 	sidebanner.src = "media/pizzaboardbanner2.jpg";
 }
 
-function rolloff(sidebanner) {
+function rolloff(sidebanner) { 
 	sidebanner.src = "media/pizzaboardbanner1.jpg";
 }
 	
