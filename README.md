@@ -55,6 +55,12 @@ CHANGELOG
   - Removed Special offers element
   + Added side banner element
   + Added JS Rollover feature (2 Images linked to order page)
-  [Completed 2.1.2] - [Completed up to 2.2]
+  [Completed 2.1.2]
+  
+17/02/17 22:15 Index.html, styles.css & scripts.js updated
+  + Changed placerholder text to actual content
+  + Positioned Footer correctly
+  + Adjusted Margins of various elements to float correctly
+  [Completed up to 2.2]
 
 ~~~
