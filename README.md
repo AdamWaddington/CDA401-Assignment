@@ -14,6 +14,7 @@ CHANGELOG
   + index wireframe plan
   + contact wireframe plan
   + order wireframe plan
+  [Completed up to 1.2]
 
 15/02/17 17:00 Index.html & styles.css added
   + Header
