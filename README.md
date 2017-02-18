@@ -89,5 +89,10 @@ CHANGELOG
   + Added Live Image Changes (Tick and Cross) Based up the Live Validation
   + Added CSS attributes for the elements so they sit correctly on the page
   [Completed 2.2.5]
+  
+18/02/17 22:30 Index.html, contact.html, styles.css & scripts.js updated
+  + Filled rest of pages with fake facebook feed
+  + Finished Contact and Index Pages?
+  [Completed up to 2.2.5] - with presentable finish
 
 ~~~
