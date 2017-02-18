@@ -70,5 +70,9 @@ CHANGELOG
   + Edited floating on contact page
   + Amended various elements class names to semantically make sense over multiple pages
   [Completed 2.2.1]
+  
+18/02/17 01:15 Index.html, contact.html, styles.css & scripts.js updated
+  + Added form on contact page
+  [Completed 2.2.2]
 
 ~~~
