@@ -77,7 +77,7 @@ function validation() {
 	var email = document.forms["contactform"]["email"].value;
 	if (email == "")
 	{
-		errormsg = errormsg + "\n Email"
+		errormsg = errormsg + "\n Email Address"
 	}
 	var message = document.getElementById("message").value;
 	if (message.length < 1)
@@ -92,6 +92,45 @@ function validation() {
 	else
 	{
 		document.contactform.submit
+	}
+}
+
+function livevalidation() {
+	var first_name = document.forms["contactform"]["first_name"].value;
+	if (first_name == "")
+	{
+		document.getElementById("first_name").style.backgroundColor = "red";
+	}
+	else
+	{
+		document.getElementById("first_name").style.backgroundColor = "";
+	}
+	var last_name = document.forms["contactform"]["last_name"].value;
+	if (last_name == "")
+	{
+		document.getElementById("last_name").style.backgroundColor = "red";
+	}
+	else
+	{
+		document.getElementById("last_name").style.backgroundColor = "";
+	}
+	var email = document.forms["contactform"]["email"].value;
+	if (email == "")
+	{
+		document.getElementById("email").style.backgroundColor = "red";
+	}
+	else
+	{
+		document.getElementById("email").style.backgroundColor = "";
+	}
+	var message = document.getElementById("message").value;
+	if (message.length < 1)
+	{
+		document.getElementById("message").style.backgroundColor = "red";
+	}
+	else
+	{
+		document.getElementById("message").style.backgroundColor = "";
 	}
 }
 			

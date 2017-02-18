@@ -37,11 +37,11 @@
 		<h2> Send us a Message </h2>
 		<p> Required fields are marked with (*) </p>
 			<form name="contactform" class="contactform" onsubmit="return validation()">
-				First Name (*) <input type="text" name="first_name" id="first_name"> </br>
-				Last Name (*) <input type="text" name="last_name" id="last_name"> </br>
-				Email Address (*) <input type="text" name="email" id="email"> </br>
-				Phone Number <input type="text" name="phone" id="phone"> </br>
-				Your Message (*) </br> <textarea type="text" name="message" id="message" rows="10" cols="63"></textarea> </br>
+				First Name (*) <input type="text" name="first_name" id="first_name" onchange="livevalidation()"> </br>
+				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="livevalidation()"> </br>
+				Email Address (*) <input type="text" name="email" id="email" onchange="livevalidation()"> </br>
+				Phone Number <input type="text" name="phone" id="phone" onchange="livevalidation()"> </br>
+				Your Message (*) </br> <textarea type="text" name="message" id="message" rows="10" cols="63" onchange="livevalidation()" maxlength="500"></textarea> </br>
 				<input type="submit" value="Send" name="send">	
 			</form>
 		</section>
