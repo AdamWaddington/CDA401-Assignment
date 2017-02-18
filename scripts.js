@@ -61,5 +61,39 @@ function rollover(sidebanner) {
 function rolloff(sidebanner) { 
 	sidebanner.src = "media/pizzaboardbanner1.jpg";
 }
+
+function validation() {
+	var errormsg = "Please Enter Your:"
+	var first_name = document.forms["contactform"]["first_name"].value;
+	if (first_name == "")
+	{
+		errormsg = errormsg + "\n First Name"
+	}
+	var last_name = document.forms["contactform"]["last_name"].value;
+	if (last_name == "")
+	{
+		errormsg = errormsg + "\n Last Name"
+	}
+	var email = document.forms["contactform"]["email"].value;
+	if (email == "")
+	{
+		errormsg = errormsg + "\n Email"
+	}
+	var message = document.getElementById("message").value;
+	if (message.length < 1)
+	{
+		errormsg = errormsg + "\n Your Message"
+	}
+	if (errormsg != "Please Enter Your:")
+	{
+		alert(errormsg)
+		return false
+	}
+	else
+	{
+		document.contactform.submit
+	}
+}
+			
 	
 

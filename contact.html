@@ -35,12 +35,13 @@
 		</section>
 		<section class="rightbox">
 		<h2> Send us a Message </h2>
-			<form class="contactform">
-				First Name <input type="text" name="first_name"> </br>
-				Last Name <input type="text" name="last_name"> </br>
-				Email Address <input type="text" name="email"> </br>
-				Phone Number <input type="text" name="phone"> </br>
-				Your Message </br> </br> <textarea type="text" name="message" rows="10" cols="63"> </textarea> </br>
+		<p> Required fields are marked with (*) </p>
+			<form name="contactform" class="contactform" onsubmit="return validation()">
+				First Name (*) <input type="text" name="first_name" id="first_name"> </br>
+				Last Name (*) <input type="text" name="last_name" id="last_name"> </br>
+				Email Address (*) <input type="text" name="email" id="email"> </br>
+				Phone Number <input type="text" name="phone" id="phone"> </br>
+				Your Message (*) </br> <textarea type="text" name="message" id="message" rows="10" cols="63"></textarea> </br>
 				<input type="submit" value="Send" name="send">	
 			</form>
 		</section>
