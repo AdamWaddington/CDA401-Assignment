@@ -84,5 +84,10 @@ CHANGELOG
   + Added Live Validation on required inputs
   + Minor CSS Alterations on the form elements
   [Completed 2.2.4]
+  
+18/02/17 04:15 Contact.html, styles.css & scripts.js updated
+  + Added Live Image Changes (Tick and Cross) Based up the Live Validation
+  + Added CSS attributes for the elements so they sit correctly on the page
+  [Completed 2.2.5]
 
 ~~~
