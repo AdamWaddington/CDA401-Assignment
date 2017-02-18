@@ -74,5 +74,10 @@ CHANGELOG
 18/02/17 01:15 Index.html, contact.html, styles.css & scripts.js updated
   + Added form on contact page
   [Completed 2.2.2]
+  
+18/02/17 02:45 Contact.html, styles.css & scripts.js updated
+  + Added Validation on all required inputs
+  + Minor alterations to text for form to reflect above requirements
+  [Completed 2.2.3]
 
 ~~~
