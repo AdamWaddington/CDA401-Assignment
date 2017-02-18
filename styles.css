@@ -100,14 +100,17 @@ img.mainslide {
 }
 
 section.placeholder {
-	margin-top: 285px;
+	margin-top: 265px;
 	width: 450px;
 	height: 600px;
-	background-color: #000000;
+	background-color: transparent;
 	float: right;
 	margin-bottom: 20px;
 	margin-right: 50px;
-	
+}
+
+iframe.feed {
+	border-radius: 15px;
 }
 
 section.leftbox {
