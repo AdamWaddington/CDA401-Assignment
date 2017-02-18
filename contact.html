@@ -37,11 +37,11 @@
 		<h2> Send us a Message </h2>
 		<p> Required fields are marked with (*) </p>
 			<form name="contactform" class="contactform" onsubmit="return validation()">
-				First Name (*) <input type="text" name="first_name" id="first_name" onchange="livevalidation()"> </br>
-				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="livevalidation()"> </br>
-				Email Address (*) <input type="text" name="email" id="email" onchange="livevalidation()"> </br>
-				Phone Number <input type="text" name="phone" id="phone" onchange="livevalidation()"> </br>
-				Your Message (*) </br> <textarea type="text" name="message" id="message" rows="10" cols="63" onchange="livevalidation()" maxlength="500"></textarea> </br>
+				First Name (*) <input type="text" name="first_name" id="first_name" onchange="livevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_firstname"> </br>
+				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="livevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_lastname"> </br>
+				Email Address (*) <input type="text" name="email" id="email" onchange="livevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_email"> </br> 
+				Phone Number <input type="text" name="phone" id="phone" onchange="livevalidation()"> <img class="tickcross" src="media/tick.png" id="tickcross_phone"> </br> 
+				Your Message (*) </br> <img class="tickcross tickcrosslower" src="media/cross.png" id="tickcross_message"> <textarea type="text" name="message" id="message" rows="10" cols="63" onchange="livevalidation()" maxlength="500"></textarea> </br>
 				<input type="submit" value="Send" name="send">	
 			</form>
 		</section>

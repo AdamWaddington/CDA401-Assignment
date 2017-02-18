@@ -150,6 +150,17 @@ input {
 	float: right;
 }
 
+img.tickcross {
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin-right: 10px;
+}
+
+img.tickcrosslower {
+	margin-bottom: 10px;
+}
+
 input[type=submit] {
 	float: left;
 	margin-left: 210px;

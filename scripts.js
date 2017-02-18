@@ -100,37 +100,45 @@ function livevalidation() {
 	if (first_name == "")
 	{
 		document.getElementById("first_name").style.backgroundColor = "red";
+		document.getElementById("tickcross_firstname").src = "media/cross.png"; 
 	}
 	else
 	{
 		document.getElementById("first_name").style.backgroundColor = "";
+		document.getElementById("tickcross_firstname").src = "media/tick.png"; 
 	}
 	var last_name = document.forms["contactform"]["last_name"].value;
 	if (last_name == "")
 	{
 		document.getElementById("last_name").style.backgroundColor = "red";
+		document.getElementById("tickcross_lastname").src = "media/cross.png"; 
 	}
 	else
 	{
 		document.getElementById("last_name").style.backgroundColor = "";
+		document.getElementById("tickcross_lastname").src = "media/tick.png"; 
 	}
 	var email = document.forms["contactform"]["email"].value;
 	if (email == "")
 	{
 		document.getElementById("email").style.backgroundColor = "red";
+		document.getElementById("tickcross_email").src = "media/cross.png"; 
 	}
 	else
 	{
 		document.getElementById("email").style.backgroundColor = "";
+		document.getElementById("tickcross_email").src = "media/tick.png"; 
 	}
 	var message = document.getElementById("message").value;
 	if (message.length < 1)
 	{
 		document.getElementById("message").style.backgroundColor = "red";
+		document.getElementById("tickcross_message").src = "media/cross.png"; 
 	}
 	else
 	{
 		document.getElementById("message").style.backgroundColor = "";
+		document.getElementById("tickcross_message").src = "media/tick.png"; 
 	}
 }
 			
