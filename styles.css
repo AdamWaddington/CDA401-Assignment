@@ -142,6 +142,25 @@ iframe.embeddedmap {
 	border-radius: 15px;
 }
 
+form.contactform {
+	line-height: 200%;
+}
+
+input {
+	float: right;
+}
+
+input[type=submit] {
+	float: left;
+	margin-left: 210px;
+	padding: 5px 15px;
+	background: #141B41;
+	color: #98B9F2;
+	border-radius: 25px;
+	cursor: pointer;
+	text-align: center;
+}
+
 footer, footer.p {
 	color: #98B9F2;
 	text-align: center;
