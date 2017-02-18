@@ -62,5 +62,12 @@ CHANGELOG
   + Positioned Footer correctly
   + Adjusted Margins of various elements to float correctly
   [Completed up to 2.2]
+  
+18/02/17 00:15 Index.html, styles.css & scripts.js updated, contact.html added
+  + Added contact page
+  + Added an Embedded map to contact page alongside fake address
+  + Edited floating on contact page
+  + Amended various elements class names to semantically make sense over multiple pages
+  [Completed 2.2.1]
 
 ~~~
