@@ -79,5 +79,10 @@ CHANGELOG
   + Added Validation on all required inputs
   + Minor alterations to text for form to reflect above requirements
   [Completed 2.2.3]
+  
+18/02/17 03:45 Contact.html, styles.css & scripts.js updated
+  + Added Live Validation on required inputs
+  + Minor CSS Alterations on the form elements
+  [Completed 2.2.4]
 
 ~~~
