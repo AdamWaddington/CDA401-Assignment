@@ -83,13 +83,14 @@ hr {
 	border-color: #918EF4;
 }
 
-figure.centralimage {
+figure.central {
 	margin-top: 285px;
 	float: left;
 	background-color: transparent;
 	margin-left: 0px;
 	margin-right: 25px;
 	margin-bottom: 25px;
+	width: 1000px;
 }
 
 img.mainslide {
@@ -109,7 +110,7 @@ section.placeholder {
 	
 }
 
-section.lefttext {
+section.leftbox {
 	float: left;
 	width: 475px;
 	background-color: transparent;
@@ -123,7 +124,7 @@ section.lefttext {
 	text-align: justify;
 }
 
-section.righttext {
+section.rightbox {
 	float: left;
 	width: 475px;
 	background-color: transparent;
@@ -135,6 +136,10 @@ section.righttext {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	text-align: justify;
+}
+
+iframe.embeddedmap {
+	border-radius: 15px;
 }
 
 footer, footer.p {
