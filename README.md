@@ -122,4 +122,9 @@ CHANGELOG
   + Add relevent CSS elements to place correctly
   [Completed up to 2.3.2]
   
+19/02/17 07:00 Order.html & scripts.js updated
+  + Added Live function to update total price on every selection
+  + Added Formatting to price to display as £x.xx rather than £x.x
+  [Completed 2.3.3]
+  
 ~~~
