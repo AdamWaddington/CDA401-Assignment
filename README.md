@@ -127,4 +127,9 @@ CHANGELOG
   + Added Formatting to price to display as £x.xx rather than £x.x
   [Completed 2.3.3]
   
+19/02/17 07:15 Order.html & scripts.js updated
+  + Added the required extras & Toppings
+  + Changed toppings and extras to checkboxes instead of radio buttons
+  [Completed 2.3.4]
+  
 ~~~
