@@ -203,9 +203,20 @@ section.basket {
 	border-color: #141B41;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	position: relative;
 }
 
-input[type=submit] {
+section.paymentsum {
+	position: absolute;
+	bottom: 0;
+	display: inline;
+}
+
+p.totaltext {
+	float: left;
+}
+
+input[type=submit], input[type=reset] {
 	float: left;
 	padding: 5px 15px;
 	background: #141B41;
@@ -221,6 +232,10 @@ input[type=submit] {
 
 #orderform input[type=submit] {
 	margin-left: 475px;
+}
+
+#orderform input[type=reset] {
+	margin-left: 482px;
 }
 
 footer, footer.p {

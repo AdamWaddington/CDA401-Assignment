@@ -30,6 +30,9 @@
 		</figure>
 		<section class="newsfeed basket">
 			<h2> Order Summary </h2>
+			<section class="paymentsum">
+				<p class="totaltext"> Total: £</p><p id="totalprice" class="totaltext">0.00</p>
+			</section>
 		</section>
 		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation()">
 			<section class="boxorder boxorderleft">
@@ -58,7 +61,8 @@
 				<input type="text" name="delivery"> Address Line 2 </br>
 				<input type="text" name="delivery"> Post Code (*)</br>
 				<input type="text" name="delivery"> Phone Number (*)</br>
-				<input type="submit" value="Send" name="send">	
+				<input type="submit" value="Place Order" name="send">
+				<input type="reset" value="Reset All" name="reset">
 			</section>
 		</form>
 		<footer>
