@@ -106,4 +106,10 @@ CHANGELOG
   + Amended CSS elements to reflect changes with minimal code added
   + JS function names amended to reflect changes and additions to maintain semantic sense
   [Completed 2.3.1]
+  
+19/02/17 04:45 Index.html, contact.html, order.html styles.css & scripts.js updated
+  + Minor Formatting changes
+  + Minor element adjustments
+  [Completed up to 2.3.1]
+  
 ~~~
