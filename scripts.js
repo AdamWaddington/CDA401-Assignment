@@ -205,6 +205,10 @@ function updatetotal() {
 	
 	var cheese = document.getElementById("cheese");
 	var chips = document.getElementById("chips");
+	var mushrooms = document.getElementById("mushrooms");
+	var ham = document.getElementById("ham");
+	var anchovies = document.getElementById("anchovies");
+	var garlicbread = document.getElementById("garlicbread");
 	
 	var extraprice = 0
 	if (cheese.checked)
@@ -214,6 +218,22 @@ function updatetotal() {
 	if (chips.checked)
 	{
 		extraprice = +extraprice + +chips.value
+	}
+	if (mushrooms.checked)
+	{
+		extraprice = +extraprice + +mushrooms.value
+	}
+	if (ham.checked)
+	{
+		extraprice = +extraprice + +ham.value
+	}
+	if (anchovies.checked)
+	{
+		extraprice = +extraprice + +anchovies.value
+	}
+	if (garlicbread.checked)
+	{
+		extraprice = +extraprice + +garlicbread.value
 	}
 	
 	var totalprice
