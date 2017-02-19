@@ -117,4 +117,9 @@ CHANGELOG
   + A Pizza base and at least one topping must be selected to submit form
   [Completed 2.3.2]
   
+19/02/17 06:10  Order.html, styles.css & scripts.js updated
+  + Added Total Price Placeholder
+  + Add relevent CSS elements to place correctly
+  [Completed up to 2.3.2]
+  
 ~~~
