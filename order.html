@@ -38,20 +38,20 @@
 			<section class="boxorder boxorderleft">
 				<h3> Select your pizza base (*) </h3>
 				<hr>
-				<input class="base" type="radio" name="base" value="base_small"> Small <span class="price">£5</span> </br>
-				<input class="base" type="radio" name="base" value="base_medium"> Medium <span class="price">£8</span> </br>	
-				<input class="base" type="radio" name="base" value="base_large"> Large <span class="price">£10</span> </br>
-				<input class="base" type="radio" name="base" value="base_xlarge"> Extra Large <span class="price">£12</span> </br>	
+				<input class="base" type="radio" name="base" value="5" onclick="updatetotal()" id="smallbase"> Small <span class="price">£5</span> </br>
+				<input class="base" type="radio" name="base" value="8" onclick="updatetotal()" id="mediumbase"> Medium <span class="price">£8</span> </br>	
+				<input class="base" type="radio" name="base" value="10" onclick="updatetotal()" id="largebase"> Large <span class="price">£10</span> </br>
+				<input class="base" type="radio" name="base" value="12" onclick="updatetotal()" id="xlargebase"> Extra Large <span class="price">£12</span> </br>	
 			</section>
 			<section class="boxorder">
 				<h3> Select one or more topping (*) </h3>
 				<hr>
-				<input class="topping" type="checkbox" name="topping" value="cheese"> Cheese <span class="price">£0.20</span> </br>
+				<input class="topping" type="checkbox" name="topping" value="0.2" onclick="updatetotal()" id="cheese"> Cheese <span class="price">£0.20</span> </br>
 			</section>
 			<section class="boxorder boxorderright">
 				<h3> Extras & Side orders </h3>
 				<hr>
-				<input class="side" type="checkbox" name="side" value="chips"> Chips <span class="price">£1</span> </br>
+				<input class="side" type="checkbox" name="side" value="1" onclick="updatetotal()" id="chips"> Chips <span class="price">£1</span> </br>
 			</section>
 			<section class="lowercentral">
 				<h3> Delivery Information </h3>

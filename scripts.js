@@ -178,6 +178,51 @@ function ordervalidation() {
 		document.orderform.submit
 	}
 }
+
+function updatetotal() {
+	var smallbase = document.getElementById("smallbase");
+	var mediumbase = document.getElementById("mediumbase");
+	var largebase = document.getElementById("largebase");
+	var xlargebase = document.getElementById("xlargebase");
+	
+	var baseprice = 0
+	if (smallbase.checked)
+	{
+		baseprice = smallbase.value
+	}
+	if (mediumbase.checked)
+	{
+		baseprice = mediumbase.value
+	}
+	if (largebase.checked)
+	{
+		baseprice = largebase.value
+	}
+	if (xlargebase.checked)
+	{
+		baseprice = xlargebase.value
+	}
+	
+	var cheese = document.getElementById("cheese");
+	var chips = document.getElementById("chips");
+	
+	var extraprice = 0
+	if (cheese.checked)
+	{
+		extraprice = +extraprice + +cheese.value
+	}
+	if (chips.checked)
+	{
+		extraprice = +extraprice + +chips.value
+	}
+	
+	var totalprice
+	totalprice = +baseprice + +extraprice
+	
+	totalprice = parseFloat(totalprice).toFixed(2);
+	
+	document.getElementById('totalprice').innerHTML = totalprice;
+}
 			
 	
 
