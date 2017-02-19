@@ -99,5 +99,11 @@ CHANGELOG
   + Added Order Page
   + Amended placeholders and elements ready for finsihing page
   [Completed 2.3]
-
+  
+19/02/17 04:20 Index.html, contact.html, order.html styles.css & scripts.js updated
+  + Added basic layout form order form
+  + Integrated new third column into order page
+  + Amended CSS elements to reflect changes with minimal code added
+  + JS function names amended to reflect changes and additions to maintain semantic sense
+  [Completed 2.3.1]
 ~~~
