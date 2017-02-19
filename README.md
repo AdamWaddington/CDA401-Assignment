@@ -112,4 +112,9 @@ CHANGELOG
   + Minor element adjustments
   [Completed up to 2.3.1]
   
+19/02/17 05:30 Index.html, contact.html, order.html styles.css & scripts.js updated
+  + Added JS Validation on order form
+  + A Pizza base and at least one topping must be selected to submit form
+  [Completed 2.3.2]
+  
 ~~~
