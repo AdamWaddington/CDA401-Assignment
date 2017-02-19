@@ -99,7 +99,7 @@ img.mainslide {
 	border-radius: 15px;
 }
 
-section.placeholder {
+section.newsfeed {
 	margin-top: 265px;
 	width: 450px;
 	height: 600px;
@@ -141,11 +141,40 @@ section.rightbox {
 	text-align: justify;
 }
 
+section.boxorder {
+	float: left;
+	width: 300px;
+	height: 225px;
+	background-color: orange;
+	margin-left: 0px;
+	margin-right: 50px;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: justify;
+}
+
+section.boxorderright {
+	margin-right: 0px;
+}
+
+section.lowercentral {
+	float: left;
+	width: 1000px;
+}
+
 iframe.embeddedmap {
 	border-radius: 15px;
 }
 
 form.contactform {
+	line-height: 200%;
+}
+
+form.orderform {
 	line-height: 200%;
 }
 
@@ -166,13 +195,20 @@ img.tickcrosslower {
 
 input[type=submit] {
 	float: left;
-	margin-left: 210px;
 	padding: 5px 15px;
 	background: #141B41;
 	color: #98B9F2;
 	border-radius: 25px;
 	cursor: pointer;
 	text-align: center;
+}
+
+#contactform input[type=submit] {
+	margin-left: 210px;
+}
+
+#orderform input[type=submit] {
+	margin-left: 475px;
 }
 
 footer, footer.p {

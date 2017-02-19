@@ -28,7 +28,7 @@
 			<hr>
 			<p> We always aim to provide a great experience, but if we didn't get it right this time, or you'd like to offer any suggestions, then we are here to help. First let us know some details, and then please leave your message below. </p>
 		</figure>
-		<section class="placeholder">
+		<section class="newsfeed">
 			<h2> Recent News </h2>
 				<iframe class="feed" id="feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzahutuk%2F%3Ffref%3Dts&tabs=timeline&width=450&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=107883452563572" width="450" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 		</section>
@@ -38,12 +38,12 @@
 		<section class="rightbox">
 		<h2> Send us a Message </h2>
 		<p> Required fields are marked with (*) </p>
-			<form name="contactform" class="contactform" onsubmit="return validation()">
-				First Name (*) <input type="text" name="first_name" id="first_name" onchange="livevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_firstname"> </br>
-				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="livevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_lastname"> </br>
-				Email Address (*) <input type="text" name="email" id="email" onchange="livevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_email"> </br> 
-				Phone Number <input type="text" name="phone" id="phone" onchange="livevalidation()"> <img class="tickcross" src="media/tick.png" id="tickcross_phone"> </br> 
-				Your Message (*) </br> <img class="tickcross tickcrosslower" src="media/cross.png" id="tickcross_message"> <textarea type="text" name="message" id="message" rows="10" cols="63" onchange="livevalidation()" maxlength="500"></textarea> </br>
+			<form id="contactform" name="contactform" class="contactform" onsubmit="return contactvalidation()">
+				First Name (*) <input type="text" name="first_name" id="first_name" onchange="contactlivevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_firstname"> </br>
+				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="contactlivevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_lastname"> </br>
+				Email Address (*) <input type="text" name="email" id="email" onchange="contactlivevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_email"> </br> 
+				Phone Number <input type="text" name="phone" id="phone" onchange="contactlivevalidation()"> <img class="tickcross" src="media/tick.png" id="tickcross_phone"> </br> 
+				Your Message (*) </br> <img class="tickcross tickcrosslower" src="media/cross.png" id="tickcross_message"> <textarea type="text" name="message" id="message" rows="10" cols="63" onchange="contactlivevalidation()" maxlength="500"></textarea> </br>
 				<input type="submit" value="Send" name="send">	
 			</form>
 		</section>

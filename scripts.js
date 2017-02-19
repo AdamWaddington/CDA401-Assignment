@@ -62,7 +62,7 @@ function rolloff(sidebanner) {
 	sidebanner.src = "media/pizzaboardbanner1.jpg";
 }
 
-function validation() {
+function contactvalidation() {
 	var errormsg = "Please Enter Your:"
 	var first_name = document.forms["contactform"]["first_name"].value;
 	if (first_name == "")
@@ -95,7 +95,7 @@ function validation() {
 	}
 }
 
-function livevalidation() {
+function contactlivevalidation() {
 	var first_name = document.forms["contactform"]["first_name"].value;
 	if (first_name == "")
 	{
