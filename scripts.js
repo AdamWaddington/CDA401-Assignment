@@ -141,6 +141,43 @@ function contactlivevalidation() {
 		document.getElementById("tickcross_message").src = "media/tick.png"; 
 	}
 }
+
+function ordervalidation() {
+	var errormsg = "Please Select:"
+	var baseno = document.getElementsByName("base");
+	var isbasechecked = false
+	for (var counter = 0; counter < baseno.length; counter++) {
+		if(baseno[counter].checked) {
+			isbasechecked = true;
+			break
+		}
+	}
+	if (!isbasechecked) 
+	{
+		errormsg = errormsg + "\n Your base"
+	}
+	var toppingno = document.getElementsByName("topping");
+	var istoppingchecked = false
+	for (var counter = 0; counter < toppingno.length; counter++) {
+		if(toppingno[counter].checked) {
+			istoppingchecked = true;
+			break
+		}
+	}
+	if (!istoppingchecked)
+	{
+		errormsg = errormsg + "\n At least one topping"
+	}	
+	if (!isbasechecked + !istoppingchecked)
+	{
+		alert(errormsg)
+		return false
+	}
+	else
+	{
+		document.orderform.submit
+	}
+}
 			
 	
 

@@ -31,24 +31,24 @@
 		<section class="newsfeed basket">
 			<h2> Order Summary </h2>
 		</section>
-		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation">
+		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation()">
 			<section class="boxorder boxorderleft">
 				<h3> Select your pizza base (*) </h3>
 				<hr>
-				<input type="radio" name="base" value="base_small"> Small <span class="price">£5</span> </br>
-				<input type="radio" name="base" value="base_medium"> Medium <span class="price">£8</span> </br>	
-				<input type="radio" name="base" value="base_large"> Large <span class="price">£10</span> </br>
-				<input type="radio" name="base" value="base_xlarge"> Extra Large <span class="price">£12</span> </br>	
+				<input class="base" type="radio" name="base" value="base_small"> Small <span class="price">£5</span> </br>
+				<input class="base" type="radio" name="base" value="base_medium"> Medium <span class="price">£8</span> </br>	
+				<input class="base" type="radio" name="base" value="base_large"> Large <span class="price">£10</span> </br>
+				<input class="base" type="radio" name="base" value="base_xlarge"> Extra Large <span class="price">£12</span> </br>	
 			</section>
 			<section class="boxorder">
 				<h3> Select one or more topping (*) </h3>
 				<hr>
-				<input type="checkbox" name="topping" value="cheese"> Cheese <span class="price">£0.20</span> </br>
+				<input class="topping" type="checkbox" name="topping" value="cheese"> Cheese <span class="price">£0.20</span> </br>
 			</section>
 			<section class="boxorder boxorderright">
 				<h3> Extras & Side orders </h3>
 				<hr>
-				<input type="checkbox" name="side" value="chips"> Chips <span class="price">£1</span> </br>
+				<input class="side" type="checkbox" name="side" value="chips"> Chips <span class="price">£1</span> </br>
 			</section>
 			<section class="lowercentral">
 				<h3> Delivery Information </h3>
