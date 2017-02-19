@@ -94,5 +94,10 @@ CHANGELOG
   + Filled rest of pages with fake facebook feed
   + Finished Contact and Index Pages?
   [Completed up to 2.2.5] - with presentable finish
+  
+19/02/17 00:30 Index.html, contact.html, styles.css & scripts.js updated, order.html added
+  + Added Order Page
+  + Amended placeholders and elements ready for finsihing page
+  [Completed 2.3]
 
 ~~~
