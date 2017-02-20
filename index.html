@@ -9,36 +9,37 @@
 		<meta name="description" content="Solent Pizzas operate in the heart of Southampton delivering to your door">
 		<meta name="author" content="Solent Pizzas">
 	</head>
-	<body>
-		<body onload = "time(); date(); carousel();">
+	<body onload = "time(); date(); carousel();"> <!-- Run Functions for Time & Date in Footer & Image Carousel -->
 		<header>
-			<img alt="Pizza Banner" src="media/transparentpizzabannerbrand.png" />
+			<img alt="Pizza Banner" src="media/transparentpizzabannerbrand.png" /> <!-- Transparent Header Brand for Site -->
 		</header>
-		<nav>
-			<li> <a class="active nav" href="index.html">Home</a> </li>
-			<li> <a class="notactive nav" href="order.html">Order</a> </li>
-			<li> <a class="notactive nav" href="contact.html">Contact</a> </li>
-			<li style="float:right"><a class="notactive nav" href="login.html">Login</a> </li>
+		<nav> <!-- Navigation Bar -->
+			<ul>
+				<li> <a class="active nav" href="index.html">Home</a> </li>
+				<li> <a class="notactive nav" href="order.html">Order</a> </li>
+				<li> <a class="notactive nav" href="contact.html">Contact</a> </li>
+				<li style="float:right"><a class="notactive nav" href="login.html">Login</a> </li>
+			</ul>
 		</nav>
-		<aside class="ad">
+		<aside class="ad"> <!-- Left Banner - Ad Link for Order page on site -->
 				<a href="order.html"> <img alt="Pizza Night?" class="sidebanner" src="media/pizzaboardbanner1.jpg" onmouseover="rollover(this)" onmouseout="rolloff(this)"/> </a>
 		</aside>
-		<figure class="central">
+		<figure class="central"> <!-- Central Carousel of images, cycling through images -->
 			<img alt="Restaurant" class="mainslide" src="media/pizzarestaurantscroll.jpg" />
 			<img alt="Blurred Pizza" class="mainslide" src="media/pizzablurscroll.jpg" />
 			<img alt="Sliced Pizza" class="mainslide" src="media/pizzasemiscroll.jpg" />
 		</figure>
-		<section class="newsfeed">
+		<section class="newsfeed"> <!-- Embedded news feed from facebook -->
 			<h2> Recent News </h2>
-			<iframe class="feed" id="feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzahutuk%2F%3Ffref%3Dts&tabs=timeline&width=450&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=107883452563572" width="450" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			<iframe class="feed" id="feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzahutuk%2F%3Ffref%3Dts&tabs=timeline&width=450&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=107883452563572" width="450" height="600" style="border:none;overflow:hidden"></iframe>
 		</section>
-		<section class="leftbox">
+		<section class="leftbox"> <!-- Content (Left Column) -->
 			<h2> Authenticity, Passion & Pride. </h2>
 			<hr>
 			<p> Our core values are what defines us. Situated in the heart of Southampton we have in our welcoming, family-run restaurant both over 80 tables for the true authentic Italian dining experience as well as a first class delivery service bringing our pizza straight to your door. </p>
 			<p> With a heritage from italy, we have both the finest cooks working hard to bring you the most genuine italian dining cusine as well as our very own secret ingredients so you will taste the difference when you choose out of our range of over 30 toppings here at Solent Pizzas. <p>
 		</section>
-		<section class="rightbox">
+		<section class="rightbox"> <!-- Content (Right Column) -->
 			<p> We use only the finest ingredients, organically produced and hand make every pizza bake in our restaurant using our family technique to ensure the most authentic taste of your food. </p>
 			<hr>
 			<p> Our family has always taken pride our work and are proud to have served the community within Southampton for over 30 years and counting. To taste a piece of Italy now, click on the 'Order' Tab at the top of the page. 
@@ -46,8 +47,8 @@
 			<p> We look forward to hearing from you! </p>
 		</section>
 		<footer>
-			<p id="timeoutput"> </p>
-			<p id="dateoutput"> </p>
+			<p id="timeoutput"> </p> <!-- Outputs the Current Time -->
+			<p id="dateoutput"> </p> <!-- Outputs the Current Day and Date -->
 		</footer>		
 	</body>
 	

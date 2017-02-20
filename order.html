@@ -9,70 +9,71 @@
 		<meta name="description" content="Solent Pizzas operate in the heart of Southampton delivering to your door">
 		<meta name="author" content="Solent Pizzas">
 	</head>
-	<body>
-		<body onload = "time(); date();">
+	<body onload = "time(); date();"> <!-- Run Functions for Time & Date in Footer -->
 		<header>
-			<img alt="Pizza Banner" src="media/transparentpizzabannerbrand.png" />
+			<img alt="Pizza Banner" src="media/transparentpizzabannerbrand.png" /> <!-- Transparent Header Brand for Site -->
 		</header>
-		<nav>
-			<li> <a class="notactive nav" href="index.html">Home</a> </li>
-			<li> <a class="active nav" href="order.html">Order</a> </li>
-			<li> <a class="notactive nav" href="contact.html">Contact</a> </li>
-			<li style="float:right"><a class="notactive nav" href="login.html">Login</a> </li>
+		<nav> <!-- Navigation Bar -->
+			<ul>
+				<li> <a class="notactive nav" href="index.html">Home</a> </li>
+				<li> <a class="active nav" href="order.html">Order</a> </li>
+				<li> <a class="notactive nav" href="contact.html">Contact</a> </li>
+				<li style="float:right"><a class="notactive nav" href="login.html">Login</a> </li>
+			</ul>
 		</nav>
-		<aside class="ad">
+		<aside class="ad"> <!-- Left Banner - Ad Link for Order page on site -->
 				<a href="order.html"> <img alt="Pizza Night?" class="sidebanner" src="media/pizzaboardbanner1.jpg" onmouseover="rollover(this)" onmouseout="rolloff(this)"/> </a>
 		</aside>
-		<figure class="central">
+		<figure class="central"> <!-- Content (Central Upper) -->
 			<h2> Place your order: </h2>
 			<p> Choose your pizza base and topping, plus any side orders and extras... </p>
 			<hr>
 		</figure>
-		<section class="newsfeed basket">
+		<section class="newsfeed basket"> <!-- Area for Real Time Basket to be displayed and running total price -->
 			<h2> Order Summary </h2>
-			<p class="livebasket" id="basket"> </p>
+			<p class="livebasket" id="basket"> </p> <!-- Real Time Basket -->
 			<section class="paymentsum">
-				<p class="totaltext"> Total: £</p><p id="totalprice" class="totaltext">0.00</p>
+				<p class="totaltext"> Total: £</p><p id="totalprice" class="totaltext">0.00</p> <!-- Real Time Price -->
 			</section>
 		</section>
-		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation()" onreset="updatetotal(); resetform()">
-			<section class="boxorder boxorderleft">
+		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation()" onreset="updatetotal(); resetform()"> <!-- Order Form -->
+			<section class="boxorder boxorderleft"> <!-- Content [Form Inputs] (Left Box) -->
 				<h3> Select your pizza base (*) </h3>
 				<hr>
-				<input class="base" type="radio" name="base" value="5" onclick="updatetotal()" id="smallbase"> Small <span class="price">£5</span> </br>
-				<input class="base" type="radio" name="base" value="8" onclick="updatetotal()" id="mediumbase"> Medium <span class="price">£8</span> </br>	
-				<input class="base" type="radio" name="base" value="10" onclick="updatetotal()" id="largebase"> Large <span class="price">£10</span> </br>
-				<input class="base" type="radio" name="base" value="12" onclick="updatetotal()" id="xlargebase"> Extra Large <span class="price">£12</span> </br>	
+				<input class="base" type="radio" name="base" value="5" onclick="updatetotal()" id="smallbase"> Small <span class="price">£5</span> <br>
+				<input class="base" type="radio" name="base" value="8" onclick="updatetotal()" id="mediumbase"> Medium <span class="price">£8</span> <br>	
+				<input class="base" type="radio" name="base" value="10" onclick="updatetotal()" id="largebase"> Large <span class="price">£10</span> <br>
+				<input class="base" type="radio" name="base" value="12" onclick="updatetotal()" id="xlargebase"> Extra Large <span class="price">£12</span> <br>	
 			</section>
-			<section class="boxorder">
+			<section class="boxorder"> <!-- Content [Form Inputs] (Middle Box) -->
 				<h3> Select one or more topping (*) </h3>
 				<hr>
-				<input class="topping" type="checkbox" name="topping" value="0.2" onclick="updatetotal()" id="cheese"> Cheese <span class="price">£0.20</span> </br>
-				<input class="topping" type="checkbox" name="topping" value="0.4" onclick="updatetotal()" id="mushrooms"> Mushrooms <span class="price">£0.40</span> </br>
-				<input class="topping" type="checkbox" name="topping" value="0.5" onclick="updatetotal()" id="ham"> Ham <span class="price">£0.50</span> </br>
-				<input class="topping" type="checkbox" name="topping" value="0.6" onclick="updatetotal()" id="anchovies"> Anchovies <span class="price">£0.60</span> </br>
+				<input class="topping" type="checkbox" name="topping" value="0.2" onclick="updatetotal()" id="cheese"> Cheese <span class="price">£0.20</span> <br>
+				<input class="topping" type="checkbox" name="topping" value="0.4" onclick="updatetotal()" id="mushrooms"> Mushrooms <span class="price">£0.40</span> <br>
+				<input class="topping" type="checkbox" name="topping" value="0.5" onclick="updatetotal()" id="ham"> Ham <span class="price">£0.50</span> <br>
+				<input class="topping" type="checkbox" name="topping" value="0.6" onclick="updatetotal()" id="anchovies"> Anchovies <span class="price">£0.60</span> <br>
 			</section>
-			<section class="boxorder boxorderright">
+			<section class="boxorder boxorderright"> <!-- Content [Form Inputs] (Right Box) -->
 				<h3> Extras & Side orders </h3>
 				<hr>
-				<input class="side" type="checkbox" name="side" value="1" onclick="updatetotal()" id="chips"> Chips <span class="price">£1</span> </br>
-				<input class="side" type="checkbox" name="side" value="2" onclick="updatetotal()" id="garlicbread"> Garlic Bread <span class="price">£2</span> </br>
+				<input class="side" type="checkbox" name="side" value="1" onclick="updatetotal()" id="chips"> Chips <span class="price">£1</span> <br>
+				<input class="side" type="checkbox" name="side" value="2" onclick="updatetotal()" id="garlicbread"> Garlic Bread <span class="price">£2</span> <br>
 			</section>
-			<section class="lowercentral">
+			<section class="lowercentral"> <!-- Content [Form Inputs] (Central Lower) -->
 				<h3> Delivery Information </h3>
 				<hr>
-				<input type="text" name="delivery"> House Number/Name (*) </br>
-				<input type="text" name="delivery"> Address Line 1 (*)</br>
-				<input type="text" name="delivery"> Address Line 2 </br>
-				<input type="text" name="delivery"> Post Code (*)</br>
-				<input type="text" name="delivery"> Phone Number (*)</br>
+				<input type="text" name="delivery"> House Number/Name (*) <br>
+				<input type="text" name="delivery"> Address Line 1 (*)<br>
+				<input type="text" name="delivery"> Address Line 2 <br>
+				<input type="text" name="delivery"> Post Code (*)<br>
+				<input type="text" name="delivery"> Phone Number (*)<br>
 				<input type="submit" value="Place Order" name="send">
 				<input type="reset" value="Reset All" name="reset" onreset="updatetotal()">
 			</section>
 		</form>
 		<footer>
-			<p id="timeoutput"> </p>
-			<p id="dateoutput"> </p>
+			<p id="timeoutput"> </p> <!-- Outputs the Current Time -->
+			<p id="dateoutput"> </p> <!-- Outputs the Current Day and Date -->
 		</footer>		
 	</body>
 	

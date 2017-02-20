@@ -15,7 +15,7 @@ function time() {
 	curr_hour12 = curr_hour12 ? curr_hour12 : 12; //0 not 12
 	
 	var curr_time12 = curr_hour12 + ":" + curr_minute + " " + ampm; //outputs 12 hour time
-	var curr_time = curr_hour + ":" + curr_minute + ":" + curr_second + " " + ampm; //outputs 24 hour time (Not in use presently)
+	//var curr_time = curr_hour + ":" + curr_minute + ":" + curr_second + " " + ampm; //outputs 24 hour time (Not in use presently)
 	
 	//console.log(curr_time); //logs each second to console - debugging tool
 	
@@ -43,7 +43,9 @@ function carousel() {
 		imageno[counter].style.display = "none"; //sets the other images not being presently displayed to 'none' as to hide them
 		}
     slideIndex++;
-    if (slideIndex > imageno.length) {slideIndex = 1} //if slide number exceeds the number of images index is set back to 1
+    if (slideIndex > imageno.length) {
+	slideIndex = 1; //if slide number exceeds the number of images index is set back to 1
+	} 
     imageno[slideIndex-1].style.display = "block"; //displays the current image - only one image should display as block at once
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
@@ -63,41 +65,41 @@ function rolloff(sidebanner) {
 }
 
 function contactvalidation() {
-	var errormsg = "Please Enter Your:"
+	var errormsg = "Please Enter Your:";
 	var first_name = document.forms["contactform"]["first_name"].value;
-	if (first_name == "")
+	if (first_name === "")
 	{
-		errormsg = errormsg + "\n First Name"
+		errormsg = errormsg + "\n First Name";
 	}
 	var last_name = document.forms["contactform"]["last_name"].value;
-	if (last_name == "")
+	if (last_name === "")
 	{
-		errormsg = errormsg + "\n Last Name"
+		errormsg = errormsg + "\n Last Name";
 	}
 	var email = document.forms["contactform"]["email"].value;
-	if (email == "")
+	if (email === "")
 	{
-		errormsg = errormsg + "\n Email Address"
+		errormsg = errormsg + "\n Email Address";
 	}
 	var message = document.getElementById("message").value;
 	if (message.length < 1)
 	{
-		errormsg = errormsg + "\n Your Message"
+		errormsg = errormsg + "\n Your Message";
 	}
 	if (errormsg != "Please Enter Your:")
 	{
-		alert(errormsg)
-		return false
+		alert(errormsg);
+		return false;
 	}
 	else
 	{
-		document.contactform.submit
+		return true;
 	}
 }
 
 function contactlivevalidation() {
 	var first_name = document.forms["contactform"]["first_name"].value;
-	if (first_name == "")
+	if (first_name === "")
 	{
 		document.getElementById("first_name").style.backgroundColor = "red";
 		document.getElementById("tickcross_firstname").src = "media/cross.png"; 
@@ -108,7 +110,7 @@ function contactlivevalidation() {
 		document.getElementById("tickcross_firstname").src = "media/tick.png"; 
 	}
 	var last_name = document.forms["contactform"]["last_name"].value;
-	if (last_name == "")
+	if (last_name === "")
 	{
 		document.getElementById("last_name").style.backgroundColor = "red";
 		document.getElementById("tickcross_lastname").src = "media/cross.png"; 
@@ -119,7 +121,7 @@ function contactlivevalidation() {
 		document.getElementById("tickcross_lastname").src = "media/tick.png"; 
 	}
 	var email = document.forms["contactform"]["email"].value;
-	if (email == "")
+	if (email === "")
 	{
 		document.getElementById("email").style.backgroundColor = "red";
 		document.getElementById("tickcross_email").src = "media/cross.png"; 
@@ -143,39 +145,39 @@ function contactlivevalidation() {
 }
 
 function ordervalidation() {
-	var errormsg = "Please Select:"
+	var errormsg = "Please Select:";
 	var baseno = document.getElementsByName("base");
-	var isbasechecked = false
+	var isbasechecked = false;
 	for (var counter = 0; counter < baseno.length; counter++) {
 		if(baseno[counter].checked) {
 			isbasechecked = true;
-			break
+			break;
 		}
 	}
 	if (!isbasechecked) 
 	{
-		errormsg = errormsg + "\n Your base"
+		errormsg = errormsg + "\n Your base";
 	}
 	var toppingno = document.getElementsByName("topping");
-	var istoppingchecked = false
-	for (var counter = 0; counter < toppingno.length; counter++) {
+	var istoppingchecked = false;
+	for (counter = 0; counter < toppingno.length; counter++) {
 		if(toppingno[counter].checked) {
 			istoppingchecked = true;
-			break
+			break;
 		}
 	}
 	if (!istoppingchecked)
 	{
-		errormsg = errormsg + "\n At least one topping"
+		errormsg = errormsg + "\n At least one topping";
 	}	
 	if (!isbasechecked + !istoppingchecked)
 	{
-		alert(errormsg)
-		return false
+		alert(errormsg);
+		return false;
 	}
 	else
 	{
-		document.orderform.submit
+		return true;
 	}
 }
 
@@ -188,32 +190,34 @@ function resetform() {
 }
 
 function updatetotal() {
+	var output = "";
+	var totalprice = "0.00";
 	var smallbase = document.getElementById("smallbase");
 	var mediumbase = document.getElementById("mediumbase");
 	var largebase = document.getElementById("largebase");
 	var xlargebase = document.getElementById("xlargebase");
-	var basket = new Array
+	var basket = new Array();
 	
-	var baseprice = 0
+	var baseprice = 0;
 	if (smallbase.checked)
 	{
-		baseprice = smallbase.value
-		basket.push("Small Base - £5 <br>")
+		baseprice = smallbase.value;
+		basket.push("Small Base - £5 <br>");
 	}
 	if (mediumbase.checked)
 	{
-		baseprice = mediumbase.value
-		basket.push("Medium Base - £8 <br>")
+		baseprice = mediumbase.value;
+		basket.push("Medium Base - £8 <br>");
 	}
 	if (largebase.checked)
 	{
-		baseprice = largebase.value
-		basket.push("Large Base - £10 <br>")
+		baseprice = largebase.value;
+		basket.push("Large Base - £10 <br>");
 	}
 	if (xlargebase.checked)
 	{
-		baseprice = xlargebase.value
-		basket.push("Extra Large Base - £12 <br>")
+		baseprice = xlargebase.value;
+		basket.push("Extra Large Base - £12 <br>");
 	}
 	
 	var cheese = document.getElementById("cheese");
@@ -223,39 +227,39 @@ function updatetotal() {
 	var anchovies = document.getElementById("anchovies");
 	var garlicbread = document.getElementById("garlicbread");
 	
-	var extraprice = 0
+	var extraprice = 0;
 	if (cheese.checked)
 	{
-		extraprice = +extraprice + +cheese.value
-		basket.push("Cheese Topping - £0.20 <br>")
+		extraprice = +extraprice + +cheese.value;
+		basket.push("Cheese Topping - £0.20 <br>");
 	}
 	if (chips.checked)
 	{
-		extraprice = +extraprice + +chips.value
-		basket.push("Extra Chips - £1 <br>")
+		extraprice = +extraprice + +chips.value;
+		basket.push("Extra Chips - £1 <br>");
 	}
 	if (mushrooms.checked)
 	{
-		extraprice = +extraprice + +mushrooms.value
-		basket.push("Mushrooms Topping - £0.40 <br>")
+		extraprice = +extraprice + +mushrooms.value;
+		basket.push("Mushrooms Topping - £0.40 <br>");
 	}
 	if (ham.checked)
 	{
-		extraprice = +extraprice + +ham.value
-		basket.push("Ham Topping - £0.50 <br>")
+		extraprice = +extraprice + +ham.value;
+		basket.push("Ham Topping - £0.50 <br>");
 	}
 	if (anchovies.checked)
 	{
-		extraprice = +extraprice + +anchovies.value
-		basket.push("Anchovies Topping - £0.60 <br>")
+		extraprice = +extraprice + +anchovies.value;
+		basket.push("Anchovies Topping - £0.60 <br>");
 	}
 	if (garlicbread.checked)
 	{
-		extraprice = +extraprice + +garlicbread.value
-		basket.push("Extra Garlic Bread - £2 <br>")
+		extraprice = +extraprice + +garlicbread.value;
+		basket.push("Extra Garlic Bread - £2 <br>");
 	}
 	
-	totalprice = +baseprice + +extraprice
+	totalprice = +baseprice + +extraprice;
 	
 	totalprice = parseFloat(totalprice).toFixed(2);
 	

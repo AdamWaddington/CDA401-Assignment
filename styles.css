@@ -55,6 +55,12 @@ nav li a:hover {
 	background-color: #918EF4;
 }
 
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 .active {
 	background-color: #918EF4;
 }

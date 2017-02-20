@@ -9,47 +9,48 @@
 		<meta name="description" content="Solent Pizzas operate in the heart of Southampton delivering to your door">
 		<meta name="author" content="Solent Pizzas">
 	</head>
-	<body>
-		<body onload = "time(); date();">
+	<body onload = "time(); date();"> <!-- Run Functions for Time & Date in Footer -->
 		<header>
-			<img alt="Pizza Banner" src="media/transparentpizzabannerbrand.png" />
+			<img alt="Pizza Banner" src="media/transparentpizzabannerbrand.png" /> <!-- Transparent Header Brand for Site -->
 		</header>
-		<nav>
-			<li> <a class="notactive nav" href="index.html">Home</a> </li>
-			<li> <a class="notactive nav" href="order.html">Order</a> </li>
-			<li> <a class="active nav" href="contact.html">Contact</a> </li>
-			<li style="float:right"><a class="notactive nav" href="login.html">Login</a> </li>
+		<nav> <!-- Navigation Bar -->
+			<ul>
+				<li> <a class="notactive nav" href="index.html">Home</a> </li>
+				<li> <a class="notactive nav" href="order.html">Order</a> </li>
+				<li> <a class="active nav" href="contact.html">Contact</a> </li>
+				<li style="float:right"><a class="notactive nav" href="login.html">Login</a> </li>
+			</ul>
 		</nav>
-		<aside class="ad">
+		<aside class="ad"> <!-- Left Banner - Ad Link for Order page on site -->
 				<a href="order.html"> <img alt="Pizza Night?" class="sidebanner" src="media/pizzaboardbanner1.jpg" onmouseover="rollover(this)" onmouseout="rolloff(this)"/> </a>
 		</aside>
-		<figure class="central">
+		<figure class="central"> <!-- Content (Central Upper) -->
 			<h1> Contact Us </h1>
 			<hr>
 			<p> We always aim to provide a great experience, but if we didn't get it right this time, or you'd like to offer any suggestions, then we are here to help. First let us know some details, and then please leave your message below. </p>
 		</figure>
-		<section class="newsfeed">
+		<section class="newsfeed"> <!-- Embedded news feed from facebook -->
 			<h2> Recent News </h2>
-				<iframe class="feed" id="feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzahutuk%2F%3Ffref%3Dts&tabs=timeline&width=450&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=107883452563572" width="450" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			<iframe class="feed" id="feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpizzahutuk%2F%3Ffref%3Dts&tabs=timeline&width=450&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=107883452563572" width="450" height="600" style="border:none;overflow:hidden"></iframe>
 		</section>
-		<section class="leftbox">
-			<iframe class="embeddedmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20126.471674512988!2d-1.40615565684907!3d50.90875090549673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487476cac8c5b20f%3A0x8bfaa585369324a2!2sPizza+Express!5e0!3m2!1sen!2suk!4v1487375751128" width="450" height="465" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<section class="leftbox"> <!-- Content (Left Column) -->
+			<iframe class="embeddedmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20126.471674512988!2d-1.40615565684907!3d50.90875090549673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487476cac8c5b20f%3A0x8bfaa585369324a2!2sPizza+Express!5e0!3m2!1sen!2suk!4v1487375751128" width="450" height="465" style="border:0" allowfullscreen></iframe>
 		</section>
-		<section class="rightbox">
+		<section class="rightbox"> <!-- Content (Right Column) -->
 		<h2> Send us a Message </h2>
 		<p> Required fields are marked with (*) </p>
-			<form id="contactform" name="contactform" class="contactform" onsubmit="return contactvalidation()">
-				First Name (*) <input type="text" name="first_name" id="first_name" onchange="contactlivevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_firstname"> </br>
-				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="contactlivevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_lastname"> </br>
-				Email Address (*) <input type="text" name="email" id="email" onchange="contactlivevalidation()"> <img class="tickcross" src="media/cross.png" id="tickcross_email"> </br> 
-				Phone Number <input type="text" name="phone" id="phone" onchange="contactlivevalidation()"> <img class="tickcross" src="media/tick.png" id="tickcross_phone"> </br> 
-				Your Message (*) </br> <img class="tickcross tickcrosslower" src="media/cross.png" id="tickcross_message"> <textarea type="text" name="message" id="message" rows="10" cols="63" onchange="contactlivevalidation()" maxlength="500"></textarea> </br>
+			<form id="contactform" name="contactform" class="contactform" onsubmit="return contactvalidation()"> <!-- Contact Form -->
+				First Name (*) <input type="text" name="first_name" id="first_name" onchange="contactlivevalidation()"> <img alt="cross" class="tickcross" src="media/cross.png" id="tickcross_firstname"> <br>
+				Last Name (*) <input type="text" name="last_name" id="last_name" onchange="contactlivevalidation()"> <img alt="cross" class="tickcross" src="media/cross.png" id="tickcross_lastname"> <br>
+				Email Address (*) <input type="text" name="email" id="email" onchange="contactlivevalidation()"> <img alt="cross" class="tickcross" src="media/cross.png" id="tickcross_email"> <br> 
+				Phone Number <input type="text" name="phone" id="phone" onchange="contactlivevalidation()"> <img alt="cross" class="tickcross" src="media/tick.png" id="tickcross_phone"> <br> 
+				Your Message (*) <br> <img alt="cross" class="tickcross tickcrosslower" src="media/cross.png" id="tickcross_message"> <textarea name="message" id="message" rows="10" cols="63" onchange="contactlivevalidation()" maxlength="500"></textarea> <br>
 				<input type="submit" value="Send" name="send">	
 			</form>
 		</section>
 		<footer>
-			<p id="timeoutput"> </p>
-			<p id="dateoutput"> </p>
+			<p id="timeoutput"> </p> <!-- Outputs the Current Time -->
+			<p id="dateoutput"> </p> <!-- Outputs the Current Day and Date -->
 		</footer>		
 	</body>
 	
