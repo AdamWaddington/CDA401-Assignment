@@ -132,4 +132,8 @@ CHANGELOG
   + Changed toppings and extras to checkboxes instead of radio buttons
   [Completed 2.3.4]
   
+20/02/17 01:40 Order.html, styles.css & scripts.js updated
+  + Added functionality for a real time basket
+  [Completed 2.3.5]
+  
 ~~~
