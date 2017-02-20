@@ -136,4 +136,9 @@ CHANGELOG
   + Added functionality for a real time basket
   [Completed 2.3.5]
   
+20/02/17 02:00 Index.html, contact.html, order.html styles.css & scripts.js updated
+  + All pages updated
+  + Very minor Amendments to order page layout
+  [Completed 2.4]
+  
 ~~~
