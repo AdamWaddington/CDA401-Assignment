@@ -147,4 +147,9 @@ CHANGELOG
   + Minor adjustments to various elements to ensure valid code
   [Completed up to 2.4]
   
+20/02/17 03:15 Index.html, contact.html, order.html styles.css & scripts.js updated
+  + All pages updated
+  + Comments added to html (and some JS)
+  [Completed 2.4.1]
+  
 ~~~
