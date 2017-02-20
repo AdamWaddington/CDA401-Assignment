@@ -141,4 +141,10 @@ CHANGELOG
   + Very minor Amendments to order page layout
   [Completed 2.4]
   
+20/02/17 03:00 Index.html, contact.html, order.html styles.css & scripts.js updated
+  + All pages updated
+  + All pages checked for valid code
+  + Minor adjustments to various elements to ensure valid code
+  [Completed up to 2.4]
+  
 ~~~
