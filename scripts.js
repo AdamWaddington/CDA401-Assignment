@@ -179,6 +179,14 @@ function ordervalidation() {
 	}
 }
 
+function resetform() {
+	var output = "";
+	var totalprice = "0.00";
+	
+	document.getElementById("basket").innerHTML = output;	
+	document.getElementById('totalprice').innerHTML = totalprice;
+}
+
 function updatetotal() {
 	var smallbase = document.getElementById("smallbase");
 	var mediumbase = document.getElementById("mediumbase");
@@ -247,12 +255,11 @@ function updatetotal() {
 		basket.push("Extra Garlic Bread - £2 <br>")
 	}
 	
-	var totalprice
 	totalprice = +baseprice + +extraprice
 	
 	totalprice = parseFloat(totalprice).toFixed(2);
 	
-	var output = basket.join("");
+	output = basket.join("");
 	
 	document.getElementById("basket").innerHTML = output;	
 	document.getElementById('totalprice').innerHTML = totalprice;
