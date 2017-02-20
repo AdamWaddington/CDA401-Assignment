@@ -29,7 +29,7 @@ function date() {
 	
 	document.getElementById("dateoutput").innerHTML = curr_date;
 	
-	setInterval(time, 60000);
+	setInterval(time, 60000); //Updates once a minute
 }
 
 var slideIndex = 0; //inits current image to first image
@@ -50,26 +50,20 @@ function carousel() {
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
-/*
-  function currentFigure(n) {
-  slideIndex = n;
-}
-*/
-
 function rollover(sidebanner) {
-	sidebanner.src = "media/pizzaboardbanner2.jpg";
+	sidebanner.src = "media/pizzaboardbanner2.jpg"; //if the mouse rolls over the sidebanner image source switches to this
 }
 
 function rolloff(sidebanner) { 
-	sidebanner.src = "media/pizzaboardbanner1.jpg";
+	sidebanner.src = "media/pizzaboardbanner1.jpg"; //when mouse rolls off the sidebanner image source switches back to this
 }
 
 function contactvalidation() {
-	var errormsg = "Please Enter Your:";
-	var first_name = document.forms["contactform"]["first_name"].value;
+	var errormsg = "Please Enter Your:"; //Initial base error message
+	var first_name = document.forms["contactform"]["first_name"].value; //Pulls value entered by user in firstname input
 	if (first_name === "")
 	{
-		errormsg = errormsg + "\n First Name";
+		errormsg = errormsg + "\n First Name"; //if no input add specifcied error to the base error message
 	}
 	var last_name = document.forms["contactform"]["last_name"].value;
 	if (last_name === "")
