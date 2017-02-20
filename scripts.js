@@ -184,23 +184,28 @@ function updatetotal() {
 	var mediumbase = document.getElementById("mediumbase");
 	var largebase = document.getElementById("largebase");
 	var xlargebase = document.getElementById("xlargebase");
+	var basket = new Array
 	
 	var baseprice = 0
 	if (smallbase.checked)
 	{
 		baseprice = smallbase.value
+		basket.push("Small Base - £5 <br>")
 	}
 	if (mediumbase.checked)
 	{
 		baseprice = mediumbase.value
+		basket.push("Medium Base - £8 <br>")
 	}
 	if (largebase.checked)
 	{
 		baseprice = largebase.value
+		basket.push("Large Base - £10 <br>")
 	}
 	if (xlargebase.checked)
 	{
 		baseprice = xlargebase.value
+		basket.push("Extra Large Base - £12 <br>")
 	}
 	
 	var cheese = document.getElementById("cheese");
@@ -214,26 +219,32 @@ function updatetotal() {
 	if (cheese.checked)
 	{
 		extraprice = +extraprice + +cheese.value
+		basket.push("Cheese Topping - £0.20 <br>")
 	}
 	if (chips.checked)
 	{
 		extraprice = +extraprice + +chips.value
+		basket.push("Extra Chips - £1 <br>")
 	}
 	if (mushrooms.checked)
 	{
 		extraprice = +extraprice + +mushrooms.value
+		basket.push("Mushrooms Topping - £0.40 <br>")
 	}
 	if (ham.checked)
 	{
 		extraprice = +extraprice + +ham.value
+		basket.push("Ham Topping - £0.50 <br>")
 	}
 	if (anchovies.checked)
 	{
 		extraprice = +extraprice + +anchovies.value
+		basket.push("Anchovies Topping - £0.60 <br>")
 	}
 	if (garlicbread.checked)
 	{
 		extraprice = +extraprice + +garlicbread.value
+		basket.push("Extra Garlic Bread - £2 <br>")
 	}
 	
 	var totalprice
@@ -241,6 +252,9 @@ function updatetotal() {
 	
 	totalprice = parseFloat(totalprice).toFixed(2);
 	
+	var output = basket.join("");
+	
+	document.getElementById("basket").innerHTML = output;	
 	document.getElementById('totalprice').innerHTML = totalprice;
 }
 			

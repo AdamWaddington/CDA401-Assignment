@@ -30,11 +30,12 @@
 		</figure>
 		<section class="newsfeed basket">
 			<h2> Order Summary </h2>
+			<p class="livebasket" id="basket"> </p>
 			<section class="paymentsum">
 				<p class="totaltext"> Total: £</p><p id="totalprice" class="totaltext">0.00</p>
 			</section>
 		</section>
-		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation()">
+		<form id="orderform" name="orderform" class="orderform" onsubmit="return ordervalidation()" onreset="updatetotal()">
 			<section class="boxorder boxorderleft">
 				<h3> Select your pizza base (*) </h3>
 				<hr>
@@ -66,7 +67,7 @@
 				<input type="text" name="delivery"> Post Code (*)</br>
 				<input type="text" name="delivery"> Phone Number (*)</br>
 				<input type="submit" value="Place Order" name="send">
-				<input type="reset" value="Reset All" name="reset">
+				<input type="reset" value="Reset All" name="reset" onreset="updatetotal()">
 			</section>
 		</form>
 		<footer>

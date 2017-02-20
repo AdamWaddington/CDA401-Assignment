@@ -216,6 +216,9 @@ p.totaltext {
 	float: left;
 }
 
+p.livebasket {
+}
+
 input[type=submit], input[type=reset] {
 	float: left;
 	padding: 5px 15px;
